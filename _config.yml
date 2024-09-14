@@ -8,8 +8,8 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-url:              https://github.com/ai4society/planning-ontology/
-baseurl:          https://github.com/ai4society/planning-ontology/
+url:              https://ai4society.github.io/planning-ontology/
+baseurl:          https://ai4society.github.io/planning-ontology/
 
 paginate:         5
 
