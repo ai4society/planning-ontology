@@ -1,9 +1,0 @@
-# The file contains some helpful commands for when developing the website.
-
-```shell
-bundle install
-bundle update
-bundle add webrick
-bundle exec jekyll serve --baseurl="/"
-```
-https://plethora.debian.net/viewtopic.php?t=153167
