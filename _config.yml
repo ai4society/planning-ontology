@@ -8,12 +8,8 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-url:              https://g-nitin.github.io/ontology-website/
-baseurl:          https://g-nitin.github.io/ontology-website/
-
-# author:
-#   name:           'Mark Otto'
-#   url:            https://twitter.com/mdo
+url:              https://github.com/ai4society/planning-ontology/
+baseurl:          https://github.com/ai4society/planning-ontology/
 
 paginate:         5
 
@@ -27,4 +23,4 @@ plugins:
 version:          2.1.0
 
 github:
-  repo:          https://g-nitin.github.io/ontology-website/
+  repo:          https://ai4society.github.io/planning-ontology/
