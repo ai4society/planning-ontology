@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Explanation Ontology: A General-Purpose, Semantic Representation for Supporting User-Centered Explanations"
+title: "A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency"
 ---
 
 [Abstract](#abstract) | [Resources](#resources) | [Tools Used](#toolsused) | [Team](#contributors) | [Publications](#publications)
@@ -8,7 +8,7 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
 
 <h1 class="page-title" style="text-transform:uppercase;" id="header">A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency</h1>
 
-<p class="message">A website to navigate resources open-sourced for the Explanation Ontology. Use the side navigation panel to explore different sections of the website and click on an add symbol for more navigation options under some sections.</p>
+<p class="message">A website to navigate resources open-sourced for the Planning Ontology. Use the side navigation panel to explore different sections of the website and click on an add symbol for more navigation options under some sections.</p>
 
 <hr>
 <article class="mb-5" id="abstract">
@@ -66,7 +66,7 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
   </tr>  
   <!-- <tr>
     <td>Ontology</td>
-    <td><a href="{{site.baseurl}}files/ontology">Explanation Ontology</a> </td> 
+    <td><a href="{{site.baseurl}}files/ontology">Planning Ontology</a> </td> 
   </tr>
     <tr>
     <td>Examples</td>

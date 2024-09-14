@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Explanation Ontology
+title: Planning Ontology
 ---
 
 [About](#ontologyabout) | [Access Links](#ontologylinks) | [Ontology Metadata](#ontologymetadata) 
@@ -8,7 +8,7 @@ title: Explanation Ontology
 <article class="mb-5" id="ontology">
 <content>
   
-<h2 id="ontologyabout">Explanation Ontology</h2>
+<h2 id="ontologyabout">Planning Ontology</h2>
   <p class="message">
     Ontology has been cleared for release and is made available as an open-source resource under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a>
   </p>
@@ -44,7 +44,7 @@ title: Explanation Ontology
 <content>
 <h3>Ontology Metadata</h3>
   <p>
-    Metadata that would be useful to navigate our <a href="#resources">resources</a>, i.e., ontology, modeling snippets and SPARQL queries. The content below can also be viewed by inspecting our explanation ontology in an ontology editor, like, <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a>.
+    Metadata that would be useful to navigate our <a href="#resources">resources</a>, i.e., ontology, modeling snippets and SPARQL queries. The content below can also be viewed by inspecting our Planning Ontology in an ontology editor, like, <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a>.
   </p>
   
   <h4 id="ontologiesreused">Ontologies Reused</h4>
