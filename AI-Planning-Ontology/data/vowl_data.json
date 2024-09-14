@@ -1,0 +1,985 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://purl.org/ai4s/ontology/planning", "http://www.w3.org/2001/XMLSchema" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "terms" : "http://purl.org/dc/terms/",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "https://purl.org/ai4s/ontology/planning",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "ontology" : "https://purl.org/ai4s/ontology/",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "planning-ontology" : "https://purl.org/ai4s/ontology/planning#"
+    },
+    "title" : {
+      "undefined" : "Ontology to model Automated Planning domain"
+    },
+    "iri" : "https://purl.org/ai4s/ontology/planning",
+    "version" : "2.0",
+    "author" : [ "Bharath Muppasani" ],
+    "description" : {
+      "undefined" : "This ontology represents the knowledge about automated planning domain. It captures the characteristics, features, and performance of different planners and domains, as well as the relationships between them. The ontology can be used to select suitable planners for a given domain and to improve their performance. The ontology aims to facilitate automated planning research and applications."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Bharath Muppasani",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju",
+        "type" : "label"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "English",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "2.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Ontology to model Automated Planning domain",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/BharathMuppasani/AI-Planning-Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://purl.org/ai4s/ontology/planning#Planner",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Planner"
+    },
+    "comment" : {
+      "en" : "a system that can generate plans for a given planning domain and problem"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#DomainRequirement",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainRequirement"
+    },
+    "comment" : {
+      "en" : "A feature that a planning domain requires or supports"
+    },
+    "id" : "25"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#TypeTag",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TypeTag"
+    },
+    "subClasses" : [ "12" ],
+    "comment" : {
+      "en" : "represents a label that can be assigned to a type in a planning domain"
+    },
+    "id" : "27"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#MacroAction",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MacroAction"
+    },
+    "comment" : {
+      "en" : "Extracted macro action, which is a combination of multiple actions of a planning domain"
+    },
+    "id" : "24",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#ActionParameter",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionParameter"
+    },
+    "comment" : {
+      "en" : "a class that represents what is involved in an action"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#State",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "subClasses" : [ "31", "29" ],
+    "comment" : {
+      "en" : "represents a situation or a configuration of the world in a planning problem"
+    },
+    "id" : "17"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#DomainPredicate",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainPredicate"
+    },
+    "comment" : {
+      "en" : "a class that represents a condition or a fact that can be true or false in a planning domain"
+    },
+    "id" : "19"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#PlannerType",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlannerType"
+    },
+    "comment" : {
+      "en" : "a category or classification of planners based on their characteristics or features"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#ProblemObject",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProblemObject"
+    },
+    "comment" : {
+      "en" : "represents an entity or a constant that is involved in a planning problem"
+    },
+    "id" : "21"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#Type",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Type"
+    },
+    "comment" : {
+      "en" : "represents a kind of entity in a planning domain"
+    },
+    "id" : "12",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#PlanningDomain",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlanningDomain"
+    },
+    "comment" : {
+      "en" : "a class that represents a problem setting for automated planning"
+    },
+    "id" : "9"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#PlanningProblem",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlanningProblem"
+    },
+    "comment" : {
+      "en" : "represents a task of the planning domain that requires a plan to be solved"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#DomainConstant",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainConstant"
+    },
+    "comment" : {
+      "en" : "represents a fixed entity in a planning domain"
+    },
+    "id" : "14"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#Plan",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Plan"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#DomainAction",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainAction"
+    },
+    "subClasses" : [ "24" ],
+    "comment" : {
+      "en" : "a class that represents a type of action that can be performed in a planning domain"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#ActionPrecondition",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionPrecondition"
+    },
+    "comment" : {
+      "en" : "a class that represents what needs to be true before an action can be done"
+    },
+    "id" : "57"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#InitialState",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InitialState"
+    },
+    "comment" : {
+      "en" : "represents the starting or the given state of a planning problem"
+    },
+    "id" : "31",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#ActionEffect",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionEffect"
+    },
+    "comment" : {
+      "en" : "a class that represents what happens after an action is done"
+    },
+    "id" : "16"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#GoalState",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GoalState"
+    },
+    "comment" : {
+      "en" : "represents a desired or a target state defined in a task that a plan should achieve"
+    },
+    "id" : "29",
+    "superClasses" : [ "17" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "43",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "44",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "45",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "49",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "50",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://purl.org/ai4s/ontology/planning#isGeneratedBy",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isGeneratedBy"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "a property that relates a plan to a planner that generates it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasParameter",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasParameter"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "a property that relates an action to an action parameter that is involved in it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#ofPlannerType",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "ofPlannerType"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "a property that relates a planner to a planner type that categorizes it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasProblem",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasProblem"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to a planning problem that is defined in it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasType",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to a type"
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasConstant",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasConstant"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to a domain constant that is defined in it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#addsPredicate",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "addsPredicate"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "a property that relates an effect to a state that adds a predicate to it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasPredicate",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasPredicate"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to a domain predicate that is defined in it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasObject",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasObject"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "a property that relates a planning problem to a problem object that is involved in it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasPlan",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasPlan"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "a property that relates a planning problem to a plan that solves it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasExtractedAction",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasExtractedAction"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to an action that is extracted from its plan"
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#ofType",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "ofType"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "a property that relates an action parameter to a type that classifies it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "range" : "17",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "17",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "4",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#solvesRequirement",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "solvesRequirement"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "a property that relates a planner to a domain requirement that it can handle or satisfy"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "33"
+  }, {
+    "range" : "27",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasTypeInstance",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasTypeInstance"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "a property that relates a type to a problem object that is an instance of it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasRequirement",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasRequirement"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain or problem to a domain requirement that is required or supported by it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasLowRelevancePlanner"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to a planner that has a low relevance score for it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#solvesRequirement",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "solvesRequirement"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "a property that relates a planner to a domain requirement that it can handle or satisfy"
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasGoalState",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasGoalState"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "a property that relates a planning problem to a goal state that is desired for it"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasEffect",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasEffect"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "a property that relates an action to an action effect that results from it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasPredicate",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasPredicate"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to a domain predicate that is defined in it"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasRequirement",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasRequirement"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain or problem to a domain requirement that is required or supported by it"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasAction",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasAction"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to a domain action that is available in it"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasPlanCost",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasPlanCost"
+    },
+    "domain" : "1",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasPlanCost",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasPlanCost"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasEffect",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasEffect"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "a property that relates an action to an action effect that results from it"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#ofPlannerType",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "ofPlannerType"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "a property that relates a planner to a planner type that categorizes it"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasObject",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasObject"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "a property that relates a planning problem to a problem object that is involved in it"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasTag",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasTag"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "a property that relates a type to a type tag that labels it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasInitialState",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasInitialState"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "a property that relates a planning problem to an initial state that is given for it"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#solvedBy",
+    "inverse" : "39",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "solvedBy"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "a property that relates a domain requirement to a planner that solves it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasInitialState",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasInitialState"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "a property that relates a planning problem to an initial state that is given for it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasMediumRelevancePlanner"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to a planner that has a medium relevance score for it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasPrecondition",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "hasPrecondition"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "a property that relates an action to an action precondition that is required for it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasGoalState",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasGoalState"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "a property that relates a planning problem to a goal state that is desired for it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasHighRelevancePlanner"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to a planner that has a high relevance score for it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#deletesPredicate",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "deletesPredicate"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "a property that relates an effect to a state that deletes a predicate from it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://purl.org/ai4s/ontology/planning#hasAction",
+    "baseIri" : "https://purl.org/ai4s/ontology/planning",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasAction"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "a property that relates a planning domain to a domain action that is available in it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "61"
+  } ]
+}
