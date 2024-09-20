@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Explanation Ontology: A Model of Explanations for User-Centered AI - Protocol"
+title: Protocol
 ---
 
 [Protocol](#protocol) | [Associated Resources](#resources) 

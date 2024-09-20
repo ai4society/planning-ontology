@@ -1,6 +1,6 @@
 ---
 layout: default
-title: presentations
+title: Presentations
 ---
 [MCBK 2020](#mcbk) | [ISWC 2020](#iswc) | [Department Presentation](#department)
 

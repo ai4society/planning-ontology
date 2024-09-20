@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency"
+title: "Planning Ontology"
 ---
 
-[Abstract](#abstract) | [Resources](#resources) | [Tools Used](#toolsused) | [Team](#contributors) | [Publications](#publications)
+[Abstract](#abstract) | [Introducation](#introduction) | [Contributions](#contributions) | [Team](#contributors) | [Publications](#publications)
 
 
 <h1 class="page-title" style="text-transform:uppercase;" id="header">A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency</h1>
@@ -111,16 +111,15 @@ title: "A Planning Ontology to Represent and Exploit Planning Knowledge for Perf
    Raghava Mutharaju<sup>2</sup>, 
    Michael N. Huhns<sup>1</sup>, and 
    Vignesh Narayanan<sup>1</sup>
-<h3><a href="https://sc.edu/"><sup>1</sup>University of South Carolina, USA</a> | <a href="https://iiitd.ac.in/"><sup>2</sup>IIIT-Delhi, India</a></h3>
+<p><b>
+  <a href="https://sc.edu/"><sup>1</sup>University of South Carolina, USA</a> | 
+  <a href="https://iiitd.ac.in/"><sup>2</sup>IIIT-Delhi, India</a>
+</b></p>
 </content>
 
 <hr>
 <article class="mb-5" id="publications">
 <content>
   <h2>Publications</h2>
-  <ul>
-    <li>
       Muppasani, Bharath & Pallagani, Vishal & Srivastava, Biplav & Mutharaju, Raghava & Huhns, Michael & Narayanan, Vignesh. (2023). A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency. <i>arXiv preprint arXiv:2307.13549.</i>
-    </li>
-  </ul>
 </content>

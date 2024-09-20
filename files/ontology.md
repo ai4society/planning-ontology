@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Planning Ontology
+title: Ontology
 ---
 
 [About](#ontologyabout) | [Access Links](#ontologylinks) | [Ontology Metadata](#ontologymetadata) 
