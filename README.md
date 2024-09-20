@@ -6,4 +6,4 @@ This repository hosts the website and code for the ICAPS'23 paper _Building and 
 
 
 - The website detailing the paper can be found at the following address: [https://ai4society.github.io/planning-ontology/](https://ai4society.github.io/planning-ontology/). 
-    - The website takes inspiration and layout from [Explanation Ontology Resource website](https://github.com/tetherless-world/explanation-ontology) and the [Hyde theme](https://hyde.getpoole.com/).
+- The website takes inspiration and layout from [Explanation Ontology Resource website](https://github.com/tetherless-world/explanation-ontology) and the [Hyde theme](https://hyde.getpoole.com/).
