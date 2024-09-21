@@ -25,10 +25,10 @@ title: Ontology
 <h3 id="ontologylinks">Ontology Links</h3>
   <ul>
     <li>
-      PURL for the ontology can be found <a href="https://raw.githack.com/BharathMuppasani/AI-Planning-Ontology/main/documentation/ontology_documentation.html">here</a>.
+      PURL for the ontology can be found here: <a href="https://purl.org/ai4s/ontology/planning">https://purl.org/ai4s/ontology/planning</a>.
     </li>
     <li>
-      Ontology documentation can be found at <a href="https://purl.org/ai4s/ontology/planning">this PyLODE link</a>.
+      Ontology documentation can be found at <a href="https://raw.githack.com/BharathMuppasani/AI-Planning-Ontology/main/documentation/ontology_documentation.html">this PyLODE link</a>.
     </li>
   </ul>
 

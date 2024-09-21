@@ -275,19 +275,19 @@ ORDER BY ? action
   </thead>
   <tbody>
     <tr>
-      <td>Plan Explanation</td>
+      <td><strong>Plan Explanation</strong></td>
       <td>Involves translating planner outputs (e.g., PDDL plans) into forms that humans can easily understand</td>
       <td><i>Can you explain the plan to achieve the goal configuration in simple terms?</i></td>
       <td>Removed block 2 from block 1, placed block 2 on the table, picked up block 3 to stack on block 1, then stacked block 2 on block 3 to achieve the goal configuration.</td>
     </tr>
     <tr>
-      <td>Explaining specific actions</td>
+      <td><strong>Explaining specific actions</strong></td>
       <td>Explains why a specific action is taken in a plan</td>
       <td><i>Why did we unstack block 2 from block 1 as the first step?</i></td>
       <td>Unstacked block 2 from block 1 to free it; placed block 2 on the table for clear rearrangement; picked up block 3 to position above block 1; stacked block 2 on block 3 to finalize the desired configuration.</td>
     </tr>
     <tr>
-      <td>Explaining non-selection of specific actions</td>
+      <td><strong>Explaining non-selection of specific actions</strong></td>
       <td>When a planner’s decision is contrasted with an alternative suggested by a human, an explanation should demonstrate why the alternative action was not chosen.</td>
       <td><i>Why didn’t the planner stack block 3 on block 1 before moving block 2?</i></td>
       <td>The action "stack block 3 on block 1" was not selected because: precondition "clear block 1" was not satisfied; action "unstack block 2 from block 1" was necessary first to satisfy the precondition; directly stacking block 3 on block 1 would violate the constraint "only one block can be on another block at a time".</td>
