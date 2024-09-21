@@ -254,7 +254,7 @@ a.sidebar-nav-item:focus {
   color: #8f5536;
 }
 
-/* Garnet */
+/* Custom theme: Garnet */
 .theme-base-g .sidebar {
   background-color: #73000A;
 }
@@ -263,6 +263,7 @@ a.sidebar-nav-item:focus {
   color: #73000A;
 }
 
+/* Custom styles below */
 .collapsible {
   background-color: #73000A;
   color: white;
@@ -309,4 +310,20 @@ a.sidebar-nav-item:focus {
 .button-content li {
   color:#73000A;
   list-style-type:disc;
+}
+
+caption {
+  caption-side: bottom;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+figcaption {
+  font-style: italic;
+  color: #666;
+  text-align: center;
 }

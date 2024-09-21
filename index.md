@@ -3,7 +3,7 @@ layout: default
 title: "Planning Ontology"
 ---
 
-[Abstract](#abstract) | [Introducation](#introduction) | [Contributions](#contributions) | [Team](#contributors) | [Publications](#publications)
+[Abstract](#abstract) | [Introduction](#introduction) | [Contributions](#contributions) | [Resources](#resources) | [Tools](#toolsused) | [Team](#contributors) | [Publications](#publications)
 
 
 <h1 class="page-title" style="text-transform:uppercase;" id="header">A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency</h1>
@@ -60,30 +60,22 @@ title: "Planning Ontology"
 <h2>List of Resources </h2>
 <ul>
  <table style="width:100%">
-    <tr>
+  <tr>
     <th>Resources</th>
     <th>Links</th> 
   </tr>  
-  <!-- <tr>
-    <td>Ontology</td>
-    <td><a href="{{site.baseurl}}files/ontology">Planning Ontology</a> </td> 
+  <tr>
+    <td>Project</td>
+    <td><a href="https://github.com/ai4society/planning-ontology">GitHub Project Link</a> </td> 
   </tr>
-    <tr>
-    <td>Examples</td>
-    <td><a href="{{site.baseurl}}files/clinicalexample">Use Case Examples</a> </td> 
+  <tr>
+    <td>PURL</td>
+    <td><a href="https://raw.githack.com/BharathMuppasani/AI-Planning-Ontology/main/documentation/ontology_documentation.html">PURL for the Ontology</a> </td> 
   </tr>
-   <tr>
-    <td>Competency Questions </td>
-    <td><a href="{{site.baseurl}}files/competencyquestions#sparql">SPARQL Queries</a> </td> 
+  <tr>
+    <td>Ontology Documentation</td>
+    <td><a href="https://purl.org/ai4s/ontology/planning">PyLODE for the Ontology</a> </td> 
   </tr>
-   <tr>
-      <tr>
-    <td>Protocol Guidance on Usage of Ontology</td>
-    <td><a href="{{site.baseurl}}files/protocol">Protocol</a> </td> 
-  </tr>
-    <td>Tools Used </td>
-    <td><a href="index#toolsused">References to tools used</a> </td> 
-  </tr> -->
 </table>
 </ul>
 </content>
@@ -111,10 +103,10 @@ title: "Planning Ontology"
    Raghava Mutharaju<sup>2</sup>, 
    Michael N. Huhns<sup>1</sup>, and 
    Vignesh Narayanan<sup>1</sup>
-<p><b>
+<p>
   <a href="https://sc.edu/"><sup>1</sup>University of South Carolina, USA</a> | 
   <a href="https://iiitd.ac.in/"><sup>2</sup>IIIT-Delhi, India</a>
-</b></p>
+</p>
 </content>
 
 <hr>

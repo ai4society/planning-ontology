@@ -1,13 +1,13 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
-<!--     <div class="sidebar-about">
+    <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
       </h1>
       <p class="lead">{{ site.description }}</p>
-    </div> -->
+    </div>
 
     <nav class="sidebar-nav">
       <ul style="list-style: none;">
@@ -17,6 +17,11 @@
           <div class="button-content">
             <ul>
               <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#abstract">Abstract</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#introduction">Introduction</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#contributions">Contributions</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#resources">Resources</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#toolsused">Tools</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#contributors">Team</a></li>
               <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#publications">Publications</a></li>
             </ul>
           </div>
@@ -33,30 +38,27 @@
           </div>
         </li>
         
-        <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/clinicalexample">Use Cases</a></li>
+        <li><button class="collapsible">
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/usecases">Use Cases</a></button>
+          <div class="button-content">
+            <ul>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/usecases#usecase_1">Most Promising Planner</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/usecases#usecase_2">Explanation Generation</a></li>
+            </ul>
+          </div>
+        </li>
         
         <li><button class="collapsible">
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/competencyquestions">Competency Questions</a></button>
           <div class="button-content">
             <ul>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/competencyquestions#competencyquestions">Competency Questions</a></li>
               <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/competencyquestions#sparql">SPARQL Queries</a></li>
             </ul>
           </div>
         </li>
-        
-        <li><button class="collapsible">
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#resoruces">Resources</a></button>
-          <div class="button-content">
-            <ul>
-              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/protocol">Protocol Guidance</a></li>
-              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/presentations">Presentations</a></li>
-              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#toolsused">Tools Used</a></li>
-            </ul>
-          </div>
-        </li>
 
-        <li><a class="sidebar-nav-item" href="https://github.com/BharathMuppasani/AI-Planning-Ontology/">GitHub Project</a></li>
-        <li><a class="sidebar-nav-item" href="{{ site.github.repo }}">Site Source</a></li>
+        <li><a class="sidebar-nav-item" href="https://github.com/ai4society/planning-ontology">GitHub Project</a></li>
            
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with

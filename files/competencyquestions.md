@@ -2,7 +2,7 @@
 layout: default
 title: Competency Questions
 ---
-[Questions](#competencyquestions) | [SPARQL Queries](#sparql) | [Call for Participation](#call)
+[Questions](#competencyquestions) | [SPARQL Queries](#sparql)
 
 <article class="mb-5" id="competencyquestions">
 <content>
@@ -66,11 +66,12 @@ title: Competency Questions
   
   <img src="{{site.baseurl}}files/images/competencyquestions/blocksworld_KG_example_planner.png"
     style="width:100%; height:100%" id="figure_2">
-  <caption>
+  <figcaption>
     Figure 2. Knowledge graph representation for blocksworld domain from IPC-2000.
-  </caption>
+  </figcaption>
 
-<h3 id="sparql">SPARQL Queries</h3>
+<hr>
+<h2 id="sparql">SPARQL Queries</h2>
 <ol>
     
   <li id="question1"><strong>What are the different types of planners used in automated planning?</strong>
@@ -218,20 +219,3 @@ WHERE {
 
 </ol>
 </content>
-
-<hr>
-<article class="mb-5" id="call">
-  <content>
-  <h2>Call for Competency Questions</h2>
-    <p style="text-indent: 4ch">
-      We have put together a set of competency questions that we consider representative questions that system
-      designers would want to address by the Planning Ontology. We vetted the validity and usefulness of these
-      questions with a small expert panel within our lab. In addition, given that explainability needs are evolving
-      and use cases are diverse, we are actively looking and are excited for other competency questions that the EO
-      can help address.
-    </p>
-    <p style="text-indent: 4ch">
-      If you are interested to provide us questions, please reach out to the project authors (Bharath Muppasani: bharath@email.sc.edu and Biplav Srivastava: biplav.s@sc.edu) with a subject line
-      titled "Competency Questions for the Planning Ontology".
-    </p>
-  </content>
