@@ -44,7 +44,10 @@ WHERE {
     <a href="#table_2">Table 2</a> presents the results of our evaluation, indicating the average number of nodes expanded, during the search, to find a solution and plan cost for each policy in a given domain. The table provides a comprehensive summary of the performance of different planners in terms of their efficiency and effectiveness. An ideal planner is expected to generate a solution with low values for both of these metrics. The <i>Ontology Policy</i>, designed to select the most promising planner for a given domain, outperformed the <i>Random Policy</i> in terms of the average number of nodes expanded to find a solution. Moreover, the <i>Random Policy</i> failed to solve problems in the parking (1 out of 3), floortile (2 out of 3), and tidybot (2 out of 3) domains, which highlights the limitations of choosing a planner randomly. But if a domain is easily solvable by relevant planners that can tackle them, <i>Random Policy</i> may still do well.
   </p>
 
-  <table border="1" id="table_2">
+   <table border="1" cellspacing="0" cellpadding="5" id="table_2">
+    <caption>
+      Table 2: Demonstrating the effectiveness of two different policies employed to choose a planner for problem-solving. Comparing the average nodes expanded (Avg. Exp.) during the search and the resulting plan cost (Avg. Cost) for two policies.
+    </caption>
     <thead>
       <tr>
         <th rowspan="2">Domain</th>
@@ -52,115 +55,217 @@ WHERE {
         <th colspan="2">Random Policy</th>
       </tr>
       <tr>
-        <th>Avg. Exp.</th>
-        <th>Avg. Cost</th>
-        <th>Avg. Exp.</th>
-        <th>Avg. Cost</th>
+        <th>Avg. Exp. ± Std.</th>
+        <th>Avg. Cost ± Std.</th>
+        <th>Avg. Exp. ± Std.</th>
+        <th>Avg. Cost ± Std.</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>scanalyzer</td>
-        <td><b>8,588</b></td>
-        <td>20</td>
-        <td>8,706</td>
-        <td>20</td>
+        <td><i>ipc 1998 - gripper</i></td>
+        <td><b>3.88e+03 ± 5.7e+03</b></td>
+        <td>17 ± 4</td>
+        <td>4.57e+03 ± 5.07e+03</td>
+        <td>17 ± 4</td>
       </tr>
       <tr>
-        <td>elevators</td>
-        <td><b>1,471</b></td>
-        <td>52</td>
-        <td>64,541</td>
-        <td>52</td>
+        <td><i>ipc 1998 - grid*</i></td>
+        <td><b>1.98e+04 ± 2.79e+04</b></td>
+        <td>20 ± 6</td>
+        <td>2.57e+04 ± 3.63e+04</td>
+        <td>20 ± 6</td>
       </tr>
       <tr>
-        <td>transport</td>
-        <td>165,263</td>
-        <td>491</td>
-        <td><b>132,367</b></td>
-        <td>491</td>
+        <td><i>ipc 2000 - blocks</i></td>
+        <td><b>1.1e+01 ± 5.0e+00</b></td>
+        <td>7 ± 1</td>
+        <td>1.5e+01 ± 9.0e+00</td>
+        <td>7 ± 1</td>
       </tr>
       <tr>
-        <td>parking*</td>
-        <td><b>367,910</b></td>
-        <td>18</td>
-        <td>488,830</td>
-        <td>17</td>
+        <td><i>ipc 2000 - elevator</i></td>
+        <td>1.0e+01 ± 7.0e+00</td>
+        <td>4 ± 1</td>
+        <td>1.0e+01 ± 7.0e+00</td>
+        <td>4 ± 1</td>
       </tr>
       <tr>
-        <td>woodworking</td>
-        <td><b>1,988</b></td>
-        <td>211</td>
-        <td>19,844</td>
-        <td>211</td>
+        <td><i>ipc 2002 - depots</i></td>
+        <td><b>1.61e+05 ± 2.28e+05</b></td>
+        <td>8 ± 8</td>
+        <td>4.19e+05 ± 5.91e+05</td>
+        <td>18 ± 8</td>
       </tr>
       <tr>
-        <td>floortile**</td>
-        <td>283,724</td>
-        <td>54</td>
-        <td><b>2,101</b></td>
+        <td><i>ipc 2002 - driverlog</i></td>
+        <td>8.28e+02 ± 7.11e+02</td>
+        <td>13 ± 4</td>
+        <td>8.28e+02 ± 7.11e+02</td>
+        <td>13 ± 4</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2004 - pipesworld</i></td>
+        <td><b>3.65e+03 ± 4.20e+03</b></td>
+        <td>8 ± 2</td>
+        <td>1.17e+04 ± 1.47e+04</td>
+        <td>8 ± 2</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2004 - satellite</i></td>
+        <td><b>3.48e+02 ± 4.85e+02</b></td>
+        <td>8 ± 6</td>
+        <td>9.32e+04 ± 1.32e+05</td>
+        <td>8 ± 6</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2006 - rovers</i></td>
+        <td><b>2.6e+01 ± 1.1e+01</b></td>
+        <td>9 ± 1</td>
+        <td>1.53e+02 ± 1.99e+02</td>
+        <td>9 ± 1</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2006 - storage</i></td>
+        <td><b>7.0e+00 ± 5.0e+00</b></td>
+        <td>4 ± 2</td>
+        <td>2.0e+01 ± 2.2e+01</td>
+        <td>4 ± 2</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2008 - openstacks</i></td>
+        <td>8.65e+02 ± 6.11e+02</td>
+        <td>2 ± 0</td>
+        <td>8.65e+02 ± 6.11e+02</td>
+        <td>2 ± 0</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2008 - sokoban</i></td>
+        <td><b>5.06e+03 ± 6.92e+03</b></td>
+        <td>16 ± 8</td>
+        <td>1.05e+05 ± 1.47e+05</td>
+        <td>16 ± 8</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2011 - floor-tile**</i></td>
+        <td><b>2.84e+05 ± 2.75e+05</b></td>
+        <td>49 ± 6</td>
+        <td>2.77e+07</td>
         <td>49</td>
       </tr>
       <tr>
-        <td>barman</td>
-        <td><b>1,275,078</b></td>
-        <td>90</td>
-        <td>5,816,476</td>
-        <td>90</td>
+        <td><i>ipc 2011 - peg-solitaire</i></td>
+        <td><b>5.07e+04 ± 3.83e+04</b></td>
+        <td>8 ± 0</td>
+        <td>2.02e+05 ± 1.00e+05</td>
+        <td>8 ± 0</td>
       </tr>
       <tr>
-        <td>openstacks</td>
-        <td><b>132,956</b></td>
-        <td>4</td>
-        <td>139,857</td>
-        <td>4</td>
+        <td><i>ipc 2014 - scanalyzer</i></td>
+        <td><b>8.6e+03 ± 1.2e+03</b></td>
+        <td>20 ± 3</td>
+        <td>8.7e+03 ± 1.1e+03</td>
+        <td>20 ± 3</td>
       </tr>
       <tr>
-        <td>nomystery</td>
-        <td>1,690</td>
-        <td>13</td>
-        <td>1,690</td>
-        <td>13</td>
+        <td><i>ipc 2014 - elevators</i></td>
+        <td>1.5e+03 ± 2.5e+03</td>
+        <td>52 ± 5</td>
+        <td><b>6.5e+04 ± 1.2e+04</b></td>
+        <td>52 ± 5</td>
       </tr>
       <tr>
-        <td>pegsol</td>
-        <td><b>89,246</b></td>
-        <td>6</td>
-        <td>101,491</td>
-        <td>6</td>
+        <td><i>ipc 2014 - transport</i></td>
+        <td>1.7e+05 ± 2.0e+05</td>
+        <td>491 ± 40</td>
+        <td><b>1.3e+05 ± 1.5e+05</b></td>
+        <td>491 ± 40</td>
       </tr>
       <tr>
-        <td>visitall</td>
-        <td>5</td>
-        <td>4</td>
-        <td>5</td>
-        <td>4</td>
+        <td><i>ipc 2014 - parking*</i></td>
+        <td><b>3.7e+05 ± 3.0e+04</b></td>
+        <td>18 ± 2</td>
+        <td>4.9e+05 ± 4.1e+04</td>
+        <td>17 ± 2</td>
       </tr>
       <tr>
-        <td>tidybot**</td>
-        <td><b>1,173</b></td>
-        <td>17</td>
-        <td>3,371</td>
-        <td>33</td>
+        <td><i>ipc 2014 - woodworking</i></td>
+        <td><b>2.0e+03 ± 1.1e+02</b></td>
+        <td>211 ± 10</td>
+        <td>2.0e+04 ± 2.0e+03</td>
+        <td>211 ± 10</td>
       </tr>
       <tr>
-        <td>parcprinter</td>
-        <td>541</td>
-        <td>441,374</td>
-        <td><b>417</b></td>
-        <td>441,374</td>
+        <td><i>ipc 2014 - floortile**</i></td>
+        <td>2.8e+03 ± 3.5e+02</td>
+        <td>54 ± 4</td>
+        <td><b>2.1e+03 ± 1.5e+02</b></td>
+        <td>49 ± 5</td>
       </tr>
       <tr>
-        <td>sokoban</td>
-        <td><b>9,653</b></td>
-        <td>25</td>
-        <td>156,600</td>
-        <td>25</td>
+        <td><i>ipc 2014 - barman</i></td>
+        <td><b>1.3e+06 ± 1.0e+05</b></td>
+        <td>90 ± 8</td>
+        <td>5.8e+06 ± 4.5e+05</td>
+        <td>90 ± 8</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2014 - openstacks</i></td>
+        <td><b>1.3e+05 ± 1.1e+04</b></td>
+        <td>4 ± 0</td>
+        <td>1.4e+05 ± 1.2e+04</td>
+        <td>4 ± 0</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2014 - nomystery</i></td>
+        <td>1.7e+03 ± 2.0e+02</td>
+        <td>13 ± 1</td>
+        <td>1.7e+03 ± 2.0e+02</td>
+        <td>13 ± 1</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2014 - pegsol</i></td>
+        <td><b>8.9e+04 ± 7.0e+03</b></td>
+        <td>6 ± 0</td>
+        <td>1.0e+05 ± 8.0e+03</td>
+        <td>6 ± 0</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2014 - visitall</i></td>
+        <td>5.0e+00 ± 0.3e+00</td>
+        <td>4 ± 0</td>
+        <td>5.0e+00 ± 0.3e+00</td>
+        <td>4 ± 0</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2014 - tidybot**</i></td>
+        <td><b>1.2e+03 ± 1.0e+02</b></td>
+        <td>17 ± 2</td>
+        <td>3.4e+03 ± 2.5e+02</td>
+        <td>33 ± 3</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2014 - parcprinter</i></td>
+        <td>5.4e+02 ± 4.5e+01</td>
+        <td>441,374 ± 5,213</td>
+        <td><b>4.2e+02 ± 3.5e+01</b></td>
+        <td>441,374 ± 5,213</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2014 - sokoban</i></td>
+        <td><b>9.7e+03 ± 8.0e+02</b></td>
+        <td>25 ± 2</td>
+        <td>1.6e+05 ± 1.2e+04</td>
+        <td>25 ± 2</td>
+      </tr>
+      <tr>
+        <td><i>ipc 2018 - organic-synthesis*</i></td>
+        <td>2.0e+00 ± 1.0e+00</td>
+        <td>1 ± 0</td>
+        <td>2.0e+00 ± 1.0e+00</td>
+        <td>1 ± 0</td>
       </tr>
     </tbody>
-    <caption>
-      Table 2: Demonstrating the effectiveness of two different policies employed to choose a planner for problem-solving. Comparing the average nodes expanded during the search and the resulting plan cost for two policies
-    </caption>
   </table>
 
 <hr>
