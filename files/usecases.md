@@ -18,7 +18,7 @@ title: Use Cases
     Our Planning Ontology establishes the connection between a planning domain and relevant planners by using data from International Planning Competitions (IPCs). The <a href="http://www.plg.inf.uc3m.es/ipc2011-deterministic/">IPC data</a> (optimal track) provides insights into how different planners performed across various domains during the competitions. For our experiment, we used this data to categorize planners’ relevance to domains as low, medium, or high based on their problem-solving success rates. We focused on four planners: <a href="https://www.fast-downward.org/IpcPlanners">Fast Downward Stone Soup</a>, <a href="https://www.fast-downward.org/IpcPlanners">LM-Cut</a>, <a href="https://www.fast-downward.org/IpcPlanners">Merge and Shrink</a>, and <a href="https://www.fast-downward.org/IpcPlanners">BJOLP</a>.
   </p>
   <p style="text-indent: 4ch">
-    We evaluate 3 problem instances of the 14 domains from IPC-2011 (including scanalyzer, elevators, transport, parking, woodworking, floortile, barman, openstacks, nomystery, pegsol, visitall, tidybot, parcpinter, and sokoban) with 2 policies for selecting planners to generate plans for each of these problem instances:
+    We evaluate 2 domains and 3 problem instances for each domain from each IPC with 2 policies for selecting planners to generate plans for each of these problem instances:
     <ol>
       <li>
         <b>Random Policy</b>: To solve each problem instance, this policy selects a random planner from the available planners.
