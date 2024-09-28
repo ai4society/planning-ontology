@@ -368,7 +368,7 @@ ORDER BY ? action
     In practice, basic queries can be combined with more complex logic to retrieve appropriate ontology information. This retrieved information is then processed to generate natural language responses, ensuring that the data is presented in a meaningful and coherent format for the user (as shown in <a href="#table_3">Table 3</a> below). This approach improves AI planning interpretability and advances human-AI collaboration.
   </p>
 
-  <table border="1" cellspacing="0" cellpadding="5" id="table_3">
+  <table border="1" cellspacing="0" cellpadding="0" id="table_3">
   <caption>Table 3: The following table shows examples of answers generated from the information retrieved using the Planning Ontology for different explanation types.</caption>
   <thead>
     <tr>
@@ -376,6 +376,7 @@ ORDER BY ? action
       <th>Description</th>
       <th>Example Question</th>
       <th>Example Response</th>
+      <th style="white-space: nowrap; width: 150px;">User Survey Result<br>(out of 5)</th>
     </tr>
   </thead>
   <tbody>
@@ -384,18 +385,60 @@ ORDER BY ? action
       <td>Involves translating planner outputs (e.g., PDDL plans) into forms that humans can easily understand</td>
       <td><i>Can you explain the plan to achieve the goal configuration in simple terms?</i></td>
       <td>Removed block 2 from block 1, placed block 2 on the table, picked up block 3 to stack on block 1, then stacked block 2 on block 3 to achieve the goal configuration.</td>
+      <td>4.20</td>
     </tr>
     <tr>
       <td><strong>Explaining specific actions</strong></td>
       <td>Explains why a specific action is taken in a plan</td>
       <td><i>Why did we unstack block 2 from block 1 as the first step?</i></td>
       <td>Unstacked block 2 from block 1 to free it; placed block 2 on the table for clear rearrangement; picked up block 3 to position above block 1; stacked block 2 on block 3 to finalize the desired configuration.</td>
+      <td>3.93</td>
     </tr>
     <tr>
       <td><strong>Explaining non-selection of specific actions</strong></td>
       <td>When a planner’s decision is contrasted with an alternative suggested by a human, an explanation should demonstrate why the alternative action was not chosen.</td>
       <td><i>Why didn’t the planner stack block 3 on block 1 before moving block 2?</i></td>
       <td>The action "stack block 3 on block 1" was not selected because: precondition "clear block 1" was not satisfied; action "unstack block 2 from block 1" was necessary first to satisfy the precondition; directly stacking block 3 on block 1 would violate the constraint "only one block can be on another block at a time".</td>
+      <td>3.73</td>
     </tr>
   </tbody>
-</table>
+  </table>
+
+<h3>User Survey</h3>
+  <b>Survey Design</b>
+    <p style="text-indent: 4ch">
+      To gain insights into user preferences and the perceived effectiveness of different explanation types, we conducted a preliminary survey using two IPC domains: <i>Blocksworld</i> and <i>Sokoban</i>.
+      Participants were presented with one problem instance from each domain. For each instance, they were given a short description, an image depicting the initial and goal configurations, and explanations for three distinct categories (ref. <a href="#table_3">Table 3</a>) generated using Planning Ontology. The exact survey design, in pdf form, can be found <a href="#form">below</a>.
+    </p>
+    
+    <p>
+      To assess the explanations, participants were asked to respond to the two questions for each explanation category:
+      <ul>
+        <li>To what extent did the explanation help you understand the rationale behind the plan?</li>
+        <li>How would you rate the clarity of the explanation provided for the plan?</li>
+      </ul>
+    </p>
+    
+    <p>
+      These questions were conducted on a 1-5 Likert scale and aimed to evaluate both the utility and clarity of the explanations provided. 
+    </p>
+
+  <b>Survey Results</b>
+    <p style="text-indent: 4ch">
+      This is a preliminary study, and we collected 10 responses. We plan to conduct a more extensive survey in future to further validate our findings. To quantify user preferences and the perceived effectiveness of each explanation type, we calculate the average scores obtained from the survey (presented in <a href="#table_3">Table 3</a>).
+    </p>
+    
+    <p style="text-indent: 4ch">
+      These scores were calculated based on responses to two types of questions for each explanation category across both domains, and they represent the participants’ evaluations of how helpful and clear each explanation type was. 
+      <ul>
+        <li>The "Plan Explanation" category received the highest average score of 4.20, indicating that users found this form of explanation to be the most clear and helpful overall. </li>
+        <li>The "Explaining Specific Actions" category followed closely with an average score of 3.93, suggesting that users also appreciated explanations that clarified why certain actions were selected within the plan. </li>
+        <li>In contrast, the "Explaining Non-Selection of Specific Actions" category received a slightly lower average score of 3.73. This indicates that while participants still found this type of explanation useful, it was perceived as less effective or comprehensible compared to the other two categories.</li>
+      </ul>
+    </p>
+
+  <b>Survey Questions</b>
+    <p style="text-indent: 4ch">
+      The survey design, including the images and questions, can be found below:
+    </p>
+    <embed src="../Planning Ontology Survey - Google Forms.pdf" width="1200px" height="800px" id="form"/>
