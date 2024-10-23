@@ -113,5 +113,15 @@ title: "Planning Ontology"
 <article class="mb-5" id="publications">
 <content>
   <h2>Publications</h2>
-      Muppasani, Bharath & Pallagani, Vishal & Srivastava, Biplav & Mutharaju, Raghava & Huhns, Michael & Narayanan, Vignesh. (2023). A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency. <i>arXiv preprint arXiv:2307.13549.</i>
+      <p>        
+        Bharath Muppasani, Nitin Gupta, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju, Michael N. Huhns, and Vignesh Narayanan. (2024). Building a Plan Ontology to Represent and Exploit Planning Knowledge and Its Applications. <i>Eighth International Conference on Data Science and Management of Data (CODS-COMAD '24), India, 2024.</i>
+      </p>
+      
+      <p>        
+        Bharath Muppasani, Vishal Pallagani, Biplav Srivastava and Raghava Mutharaju. (2023). Building and Using a Planning Ontology from Past Data for Performance Efficiency. <i>Planning and Ontology Workshop (PLATO), ICAPS 2023, Prague, CZ.</i>
+      </p>
+
+      <p>
+        Bharath Muppasani, Vishal Pallagani,Biplav Srivastava, Raghava Mutharaju, Michael Huhns, and Vignesh Narayanan. (2023). A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency. <i>arXiv preprint arXiv:2307.13549.</i>
+      </p>
 </content>
