@@ -5,7 +5,6 @@ title: "Planning Ontology"
 
 [Abstract](#abstract) | [Introduction](#introduction) | [Contributions](#contributions) | [Resources](#resources) | [Tools](#toolsused) | [Team](#contributors) | [Publications](#publications)
 
-
 <h1 class="page-title" style="text-transform:uppercase;" id="header">A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency</h1>
 
 <p class="message">A website to navigate resources open-sourced for the Planning Ontology. Use the side navigation panel to explore different sections of the website and click on an add symbol for more navigation options under some sections.</p>
@@ -15,8 +14,9 @@ title: "Planning Ontology"
 <content>
   <h2>Abstract</h2>
     <p style="text-indent: 4ch">
-      Ontologies are known for their ability to organize rich metadata, support the identification of novel insights via semantic queries, and promote reuse. In this paper, we consider the problem of automated planning, where the objective is to find a sequence of actions that will move an agent from an initial state of the world to a desired goal state. We hypothesize that given a large number of available planners and diverse planning domains; they carry essential information that can be leveraged to identify suitable planners and improve their performance for a domain. We use data on planning domains and planners from the International Planning Competition (IPC) to construct a planning ontology and demonstrate via experiments in two use cases that the ontology can lead to the selection of promising planners and improving their performance using macros - a form of action ordering constraints extracted from planning ontology. We also make the planning ontology and associated resources available to the community to promote further research.
+      Ontologies are known for their ability to organize rich metadata, support the identification of novel insights via semantic queries, and promote reuse. In this paper, we consider the problem of automated planning, where the objective is to find a sequence of actions that will move an agent from an initial state of the world to a desired goal state. We hypothesize that given the large number of available planners and diverse planning domains, they carry essential information that can be leveraged to improve many ontology applications. We use open data on planning domains and planners to construct the most comprehensive planning ontology to date, based on supported competency questions, and demonstrate its applications in two practical use cases - planner selection and plan explanation. We have also made the ontology and associated resources available to the AI and data communities to promote further research.
     </p>
+
  </content>
 
 <hr>
@@ -124,4 +124,5 @@ title: "Planning Ontology"
       <p>
         Bharath Muppasani, Vishal Pallagani,Biplav Srivastava, Raghava Mutharaju, Michael Huhns, and Vignesh Narayanan. (2023). A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency. <i>arXiv preprint arXiv:2307.13549.</i>
       </p>
+
 </content>
