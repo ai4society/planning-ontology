@@ -70,11 +70,11 @@ title: "Planning Ontology"
   </tr>
   <tr>
     <td>PURL</td>
-    <td><a href="https://raw.githack.com/BharathMuppasani/AI-Planning-Ontology/main/documentation/ontology_documentation.html">PURL for the Ontology</a> </td> 
+    <td><a href="https://purl.org/ai4s/ontology/planning">PURL for the Ontology</a> </td> 
   </tr>
   <tr>
     <td>Ontology Documentation</td>
-    <td><a href="https://purl.org/ai4s/ontology/planning">PyLODE for the Ontology</a> </td> 
+    <td><a href="https://raw.githack.com/BharathMuppasani/AI-Planning-Ontology/main/documentation/ontology_documentation.html">PyLODE for the Ontology</a> </td> 
   </tr>
 </table>
 </ul>
