@@ -3,7 +3,7 @@ layout: default
 title: "Planning Ontology"
 ---
 
-[Abstract](#abstract) | [Introduction](#introduction) | [Contributions](#contributions) | [Resources](#resources) | [Tools](#toolsused) | [Team](#contributors) | [Publications](#publications)
+[Abstract](#abstract) | [Introduction](#introduction) | [Contributions](#contributions) | [Resources](#resources) | [Planning Ontology Tool](#ontologytool) | [Tools](#toolsused) | [Team](#contributors) | [Publications](#publications)
 
 <h1 class="page-title" style="text-transform:uppercase;" id="header">A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency</h1>
 
@@ -79,7 +79,29 @@ title: "Planning Ontology"
 </table>
 </ul>
 </content>
- 
+
+<hr>
+<article class="mb-5" id="ontologytool">
+<content>
+<h2>Planning Ontology Tool</h2>
+  <p style="text-indent: 4ch">
+    The Planning Ontology is available as an interactive tool on the <a href="https://editor.planning.domains">Planning.Domains</a> website. This tool transforms PDDL (Planning Domain Definition Language) domain and problem files, along with generated plan files, into RDF/OWL knowledge graphs. It provides visualization capabilities using D3.js and enables SPARQL querying, making it easier to explore and analyze planning knowledge.
+  </p>
+  <p><b>Key Features:</b></p>
+  <ul>
+    <li>Transforms PDDL files into RDF/OWL knowledge graphs</li>
+    <li>Interactive visualization of planning domains and problems</li>
+    <li>SPARQL query interface for semantic exploration</li>
+    <li>Direct integration with the Planning.Domains online PDDL editor</li>
+  </ul>
+  <p><b>Learn more:</b></p>
+  <ul>
+    <li><a href="https://purl.archive.org/ai4s/ontology/planning">Planning Ontology PURL</a></li>
+    <li><a href="https://editor.planning.domains">Planning.Domains Editor</a></li>
+    <li><a href="https://github.com/ai4society/planning-ontology-tool">Plugin Repository</a></li>
+  </ul>
+</content>
+
 <hr>
 <article class="mb-5" id="toolsused">
 <content>
@@ -113,16 +135,30 @@ title: "Planning Ontology"
 <article class="mb-5" id="publications">
 <content>
   <h2>Publications</h2>
-      <p>        
-        Bharath Muppasani, Nitin Gupta, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju, Michael N. Huhns, and Vignesh Narayanan. (2024). Building a Plan Ontology to Represent and Exploit Planning Knowledge and Its Applications. <i>Eighth International Conference on Data Science and Management of Data (CODS-COMAD '24), India, 2024.</i>
-      </p>
-      
-      <p>        
-        Bharath Muppasani, Vishal Pallagani, Biplav Srivastava and Raghava Mutharaju. (2023). Building and Using a Planning Ontology from Past Data for Performance Efficiency. <i>Planning and Ontology Workshop (PLATO), ICAPS 2023, Prague, CZ.</i>
-      </p>
+      <ol>
+        <li>
+          <p>
+            Bharath Chandra Muppasani, Nitin Gupta, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju, Michael N. Huhns & Vignesh Narayanan. (2025). Building a Planning Ontology to Represent and Exploit Planning Knowledge and Its Applications. <i>Discover Data</i>, 3, 55. <a href="https://doi.org/10.1007/s44248-025-00093-9">https://doi.org/10.1007/s44248-025-00093-9</a>
+          </p>
+        </li>
 
-      <p>
-        Bharath Muppasani, Vishal Pallagani,Biplav Srivastava, Raghava Mutharaju, Michael Huhns, and Vignesh Narayanan. (2023). A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency. <i>arXiv preprint arXiv:2307.13549.</i>
-      </p>
+        <li>
+          <p>
+            Bharath Muppasani, Nitin Gupta, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju, Michael N. Huhns, and Vignesh Narayanan. (2024). Building a Plan Ontology to Represent and Exploit Planning Knowledge and Its Applications. <i>Eighth International Conference on Data Science and Management of Data (CODS-COMAD '24), India, 2024.</i>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Bharath Muppasani, Vishal Pallagani, Biplav Srivastava and Raghava Mutharaju. (2023). Building and Using a Planning Ontology from Past Data for Performance Efficiency. <i>Planning and Ontology Workshop (PLATO), ICAPS 2023, Prague, CZ.</i>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Bharath Muppasani, Vishal Pallagani, Biplav Srivastava, Raghava Mutharaju, Michael Huhns, and Vignesh Narayanan. (2023). A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency. <i>arXiv preprint arXiv:2307.13549.</i>
+          </p>
+        </li>
+      </ol>
 
 </content>
